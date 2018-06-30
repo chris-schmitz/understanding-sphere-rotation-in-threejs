@@ -4,3 +4,5 @@ js/three/editor/*
 js/three/docs/*
 js/three/src/*
 js/three/.github/*
+public/js/three/*
+!public/js/three/build/*
