@@ -128,8 +128,7 @@ function rotateToTarget(
   currentCameraDirection = null,
   x = null
 ) {
-  const newY =
-    -THREE.Math.degToRad(currentCameraDirection) +
+  const newY = -THREE.Math.degToRad(currentCameraDirection) +
     THREE.Math.degToRad(x) +
     ROTATION_OFFSET
 
@@ -150,8 +149,8 @@ function onWindowResize() {
 }
 
 function onMobile() {
-  var check = false
-  ;(function(a) {
+  var check = false;
+  (function (a) {
     if (
       /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino|android|ipad|playbook|silk/i.test(
         a
@@ -187,7 +186,7 @@ setInterval(() => {
   console.log("rotate to: " + xValues[currentX])
   console.log("current camera direction: " + currentCameraDirection)
   console.groupEnd()
-  rotateToTarget(window.sphere, currentCameraDirection, currentX)
+  rotateToTarget(window.sphere, currentCameraDirection, xValues[currentX])
 
   currentX = currentX < xValues.length - 1 ? currentX + 1 : 0
 }, 1000)
