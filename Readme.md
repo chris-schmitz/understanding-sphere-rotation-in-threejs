@@ -1,6 +1,7 @@
 # Rotating a sphere in Three.js
 
 ![demo](readme_attachments/demo.gif)
+
 I made this isolated proof of concept to try to understand exactly how rotating a sphere works in threejs.
 
 I'm really rusty on geometry so it's been a learning/relearning process on multiple levels.
